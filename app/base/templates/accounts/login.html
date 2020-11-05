@@ -18,9 +18,9 @@
 							</h4>
 							<span class="mb-0 text-muted">
 								{% if msg %}
-									{{ msg | safe }}
+								<div class="alert alert-danger" role="alert">{{ msg | safe }}</div>
 								{% else %}
-									ใส่ข้อมูลการเข้าสู่ระบบ
+								<div class="alert alert-primary" role="alert">ใส่ข้อมูลการเข้าสู่ระบบ</div>
 								{% endif %} 
 							</span>
 							<!-- dummy spacer -->

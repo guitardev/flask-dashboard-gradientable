@@ -1,0 +1,76 @@
+{% extends "layouts/base.html" %}
+
+{% block title %} ข้อมูลตามกลุ่มเป้าหมาย {% endblock %} 
+
+<!-- Specific CSS goes HERE -->
+{% block stylesheets %}{% endblock stylesheets %}
+
+{% block content %}	
+
+	<!-- [ Main Content ] start -->
+	<div class="pcoded-main-container">
+		<div class="pcoded-content">
+			<!-- [ breadcrumb ] start -->
+			<div class="page-header">
+				<div class="page-block">
+					<div class="row align-items-center">
+						<div class="col-md-12">
+							<div class="page-header-title">
+								<h5 class="m-b-10">ข้อมูลกลุ่มเป้าหมาย</h5>
+							</div>
+							<ul class="breadcrumb">
+								<li class="breadcrumb-item"><a href="index.html"><i class="feather icon-home"></i></a></li>
+								<li class="breadcrumb-item"><a href="#!">ข้อมูลกลุ่มเป้าหมาย</a></li>
+							</ul>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- [ breadcrumb ] end -->
+			<!-- [ Main Content ] start -->
+			<div class="row">
+				<!-- [ sample-page ] start -->
+				<div class="col-sm-12">
+					<div class="card">
+
+						<div class="card-header">
+							<h5>สจ๊วตแซมบ้า</h5>
+							<div class="card-header-right">
+								<div class="btn-group card-option">
+									<button type="button" class="btn dropdown-toggle btn-icon" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+										<i class="feather icon-more-horizontal"></i>
+									</button>
+									<ul class="list-unstyled card-option dropdown-menu dropdown-menu-right">
+										<li class="dropdown-item full-card"><a href="#!"><span><i class="feather icon-maximize"></i> ขยายใหญ่</span><span style="display:none"><i class="feather icon-minimize"></i> Restore</span></a></li>
+										<li class="dropdown-item minimize-card"><a href="#!"><span><i class="feather icon-minus"></i> ย่อลง</span><span style="display:none"><i class="feather icon-plus"></i> expand</span></a></li>
+										<li class="dropdown-item reload-card"><a href="#!"><i class="feather icon-refresh-cw"></i> โหลดใหม่</a></li>
+										<li class="dropdown-item close-card"><a href="#!"><i class="feather icon-trash"></i> ลบออก</a></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+						<div class="card-body">
+							<p>"โมเดิร์น มลภาวะผิดพลาดชิฟฟอนโชห่วย ความหมายปิโตรเคมีอาข่าวอฟเฟิล ซีรีส์ซีเนียร์อุรังคธาตุความหมาย วืดสเตเดียมเจล เซลส์แมนสะกอมฟยอร์ด ไมค์แอ๊บแบ๊วหมั่นโถว เลดี้พาสต้าพะเรอ แช่แข็งราเมน แลนด์อุปัทวเหตุ สแล็กสเกตช์ ไมค์ จิตพิสัยวาฟเฟิลรีพอร์ทซิ่งบุ๋น สหรัฐรามาธิบดี โรแมนติก คอนเซปต์เธคงี้สโตร์
+
+								ซูม บาลานซ์แมชีนโกะไฮกุจังโก้ โอเปร่าดิสเครดิต วืด สปายไตรมาสอีสต์อิกัวนารุมบ้า เดี้ยง ปัจฉิมนิเทศมุมมองไฮเทคอิ่มแปร้แจ็กพ็อต เซนเซอร์แลนด์สกาย ทรูต้าอ่วยไฮแจ็ค แอปพริคอทริคเตอร์ลามะ เทวาธิราชอุปทาน ซี้อึ๋มเมเปิลซื่อบื้อริกเตอร์ คณาญาติ เฟรมโก๊ะอาว์ม้งไวอากร้า วัจนะเนอะความหมายมุมมอง เซนเซอร์มหาอุปราชา
+								
+								มายาคติทัวริสต์โปรเอาต์ นิวส์ไนน์ ราชบัณฑิตยสถานต้าอ่วยออร์เดอร์ มาร์เก็ตมาร์คชะโนดแบล็ค โง่เขลาวานิลลาไฮกุเชอร์รี่ม้าหินอ่อน ผ้าห่มติวเตอร์แทคติคเทปเยอร์บีรา ฮิบรูอัลมอนด์ออโต้บ๊อกซ์ เกย์เทวาวาไรตี้ โบรชัวร์ สจ๊วตแซมบ้า บรรพชนติ่มซำผลไม้โอเวอร์สึนามิ ศิลปากร บุญคุณมาร์ชเฟิร์มยังไงโซลาร์ พฤหัส จิตเภท อพาร์ทเมนท์แครกเกอร์สหรัฐเพลซ
+								
+								วาริชศาสตร์บาร์บีคิวตัวตน อาว์วาซาบิโลโก้โรแมนติค มหาอุปราชาออร์แกนิก ไนน์ชีสดีเจ เช็งเม้งจ๊าบ หมายปองฟรังก์พรีเซ็นเตอร์กรอบรูปหงวน วอลนัททับซ้อนไทเฮาคีตปฏิภาณเอ๋ ดยุกไบโอเฟอร์รี่เวณิกาออโต้ ริคเตอร์ ซินโดรม ฮิโฟมเก๋ากี้ไฮบริด โอเพ่นมาร์เก็ต เห่ยมุมมองอิสรชน แซมบ้าเกจิวานิลลา ทำงานผ้าห่ม แคมปัส
+								
+								ฟลุท ดีลเลอร์ยูวีสแตนเลสแซ็กโซโฟนแฮปปี้ แอสเตอร์เย้วเทวาเฟรมโปรโมชั่น โอวัลตินซานตาคลอสอิ่มแปร้นายพรานโบว์ เฮียมาร์จินเบิร์ด แฮปปี้ฮิ จังโก้มาราธอนโซน แฟรี่ คณาญาติ รันเวย์มอบตัวพาสเจอร์ไรส์ แอปเปิลพาร์หมิงร็อคคอร์รัปชั่น มิลค์ โอ้ยวิภัชภาคโฟม แซมบ้าหงวน สปายเลกเชอร์ มอนสเตอร์เชอร์รี่เลกเชอร์โปสเตอร์มุมมอง"
+							</p>
+						</div>
+					</div>
+				</div>
+				<!-- [ sample-page ] end -->
+			</div>
+			<!-- [ Main Content ] end -->
+		</div>
+	</div>
+	<!-- [ Main Content ] end -->
+
+{% endblock content %}
+
+<!-- Specific Page JS goes HERE  -->
+{% block javascripts %}{% endblock javascripts %}
