@@ -15,6 +15,9 @@ from jinja2 import TemplateNotFound
 def index():
 
     return render_template('index.html')
+def provicedata():
+
+    return render_template('provincedata.html')
 
 @blueprint.route('/<template>')
 @login_required
