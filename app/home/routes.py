@@ -15,8 +15,11 @@ from jinja2 import TemplateNotFound
 def index():
     return render_template('index.html')
 
+@blueprint.route('/province')
 def provicedata():
     return render_template('provincedata.html')
+    
+@blueprint.route('/target')
 def targetdata():
     return render_template('targetdata.html')
 

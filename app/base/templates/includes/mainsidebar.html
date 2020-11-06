@@ -7,22 +7,17 @@
 					<li class="nav-item pcoded-menu-caption">
 						<label>Navigation</label>
 					</li>
+					
 					<li class="nav-item">
-                        <a target="_blank" rel="noopener" 
-                           href="https://appseed.us/admin-dashboards/flask-dashboard-gradientable" class="nav-link ">
-                            <span class="pcoded-micon">
-                                <i class="feather icon-layers"></i></span><span class="pcoded-mtext">เว็บหลัก</span></a>
-					</li>
-					<li class="nav-item">
-					    <a href="" class="nav-link ">
+					    <a href="{{ url_for('home_blueprint.index') }}" class="nav-link ">
                             <span class="pcoded-micon">
                                 <i class="feather icon-home"></i></span><span class="pcoded-mtext">Dashboard</span></a>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
 					    <a href="#!" class="nav-link "><span class="pcoded-micon"><i class="fa fa-database"></i></span><span class="pcoded-mtext">สถิติพื้นฐาน</span></a>
 					    <ul class="pcoded-submenu">
-					        <li><a href="/provincedata.html">ข้อมูลพื้นฐานจังหวัด</a></li>
-					        <li><a href="/targetdata.html">ข้อมูลตามกลุ่มเป้าหมาย</a></li>
+					        <li><a href="{{ url_for('home_blueprint.provicedata') }}">ข้อมูลพื้นฐานจังหวัด</a></li>
+					        <li><a href="{{ url_for('home_blueprint.targetdata') }}">ข้อมูลตามกลุ่มเป้าหมาย</a></li>
 					    </ul>
 					</li>
 					<li class="nav-item pcoded-hasmenu">
